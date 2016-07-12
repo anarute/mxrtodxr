@@ -13,6 +13,13 @@ function guess_dxr_url(mxr_url){
     dxr_url = dxr_url.replace("find?string=", "search?q=file%3A");
   };
 
+  regexp = /\?mark\=/;
+  if (dxr_url.search(regexp) != -1){
+    let query = dxr_url.split("#");
+    dxr_url = query[0];
+    dxr_url = dxr_url.replace(regexp, '#');
+  };
+
   return dxr_url;
 };
 
@@ -24,7 +31,7 @@ function updateurl(input){
   var guess_url = guess_dxr_url(input);
 
   document.getElementById("dxrurl_suggestion").style.display = "block";
-  
+
   let dxr_url_el = document.getElementById("dxrurl");
   dxr_url_el.href = guess_url;
   dxr_url_el.text = guess_url;
