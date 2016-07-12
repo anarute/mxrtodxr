@@ -1,0 +1,31 @@
+body{
+  background: url('../img/bg-gradient-sand.png') repeat-x,url('../img/bg-sand.png') repeat,#f5f1e8;}
+.main{
+  text-align: center;
+  padding-top: 5em;
+  clear:both;
+}
+.copyright{
+  clear: both;
+  background: url('../img/footer-logo.png') top left no-repeat;
+  padding-left: 60px;
+}
+footer{
+  background: #fff url('../img/footer-border.png') top center repeat-x;
+  text-align: center;
+  color: #898378;
+  margin-top: 100px;
+  clear: both;
+  font-family: verdana;
+  font-size: 90%;
+  min-height: 345px;
+}
+.footer-contents{
+  width: 880px;
+  text-align: left;
+  margin: auto;
+  padding: 35px;
+}
+input[type=text]{
+  width: 600px;
+}
