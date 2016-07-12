@@ -29,3 +29,6 @@ footer{
 input[type=text]{
   width: 600px;
 }
+#dxrurl_suggestion{
+  display: none;
+}
