@@ -23,17 +23,24 @@ function guess_dxr_url(mxr_url){
   return dxr_url;
 };
 
-function updateurl(input){
+function updateurl(){
 
   // When the project is finished we will use window.location as input
-  // let mxr_url = window.location;
-
-  var guess_url = guess_dxr_url(input);
+  let mxr_url = window.location.href;
+  if (document.referrer) {
+    var prev_url = document.referrer;
+    console.log("referrer: " + prev_url);
+  };
+  console.log("current url: " + mxr_url);
+  let guessed_url = guess_dxr_url(mxr_url);
+  console.log("guessed url: " + guessed_url);
 
   document.getElementById("dxrurl_suggestion").style.display = "block";
 
   let dxr_url_el = document.getElementById("dxrurl");
-  dxr_url_el.href = guess_url;
-  dxr_url_el.text = guess_url;
+  dxr_url_el.href = guessed_url;
+  dxr_url_el.text = guessed_url;
 
 };
+
+updateurl();

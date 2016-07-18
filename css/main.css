@@ -22,12 +22,16 @@ footer{
 }
 .footer-contents{
   width: 880px;
+  max-width: 100%;
   text-align: left;
   margin: auto;
   padding: 35px;
 }
 input[type=text]{
   width: 600px;
+}
+.important{
+  color: #C13832;
 }
 #dxrurl_suggestion{
   display: none;
