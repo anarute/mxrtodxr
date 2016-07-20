@@ -1,0 +1,4 @@
+RewriteEngine On
+RewriteRule ^/robots.txt$ - [L]
+RewriteCond %{REQUEST_URI} !^/(?:css|js|img|mozilla-tabzilla|index.html)
+RewriteRule ^(.*)$ /index.html
