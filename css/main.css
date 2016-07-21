@@ -4,6 +4,8 @@ body{
   text-align: center;
   padding-top: 5em;
   clear:both;
+  max-width: 75%;
+  margin: auto;
 }
 .copyright{
   clear: both;
