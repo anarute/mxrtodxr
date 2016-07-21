@@ -28,11 +28,13 @@
         </div>
 
         <section class="main">
-          <h1>MXR is retired.</h1>
-          <p>The page you are looking for no longer exists, use <a href="http://dxr.mozilla.org">DXR</a> instead.</p>
-          <!-- <input type="text" placeholder="Input MXR url and press enter" onchange="updateurl();"> -->
-          <p id="dxrurl_suggestion">Maybe you are looking for <a href="#" id="dxrurl">DXR url</a>?</p>
-          <p class="important">Important: do not hotlink MXR or DXR links into your projects.</p>
+          <h1>MXR replaced by DXR</h1>
+          <p>The MXR code indexing and cross-referencing service has been retired and replaced by <a href="http://dxr.mozilla.org">DXR</a></p>
+          <p id="dxrurl_suggestion">Based on your query, we suggest the following DXR URL:<br/> <a href="#" id="dxrurl">DXR url</a>?</p>
+          <p class="important">Please Do Not Hotlink Files</p>
+          <p>Please do not hotlink files directly from MXR or DXR as a way of getting Mozilla code into your project. You may not get the latest version, and your performance will suffer.</p>
+          <p>If you want to incorporate Mozilla code in your project, clone or fork the canonical source code repository (from hg, GitHub, etc.), and statically bundle the necessary components as part of your application. If your application must download files directly, obtain them from the canonical source code repository URL, and cache a local copy which updates no more than once a day. This increases your application’s resiliency and reduces load on our infrastructure.</p>
+          <p>Thanks for contributing to the free and open web!</p>
         </section>
 
         <footer>
